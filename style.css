@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+:root{
+    --nav-backgroundcolor: #fff;
+    --nav-textcolor: #000;
+    --footer-backgroundcolor: #000;
+    --footer-textcolor: #fff;
+    --links-hovercolor: #0077c0;
+    --body-headingscolor: #000;
+    --body-textcolor-black: #000;
+    --body-textcolor-white: #fff;
+    --body-textcolor-additional: blue;
+    --input-background: rgb(241, 241, 241);
+}
+
+/* ==================== HEADER =================== */
+nav{
+    background: var(--nav-backgroundcolor);
+    color: var(--nav-textcolor);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    font-weight: 700;
+}
+nav .logo{
+    display: flex;
+}
+nav .logo h4{
+    padding-top: 2rem;
+    font-size: 18px; 
+    font-family: 'Lato', sans-serif;
+}
+nav .logo img{
+    width: 80px;
+    height: auto;
+    background: var(--nav-textcolor);
+    border-radius: 50%;
+}
+nav .navlinks   {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 2rem;
+}
+nav .navlinks ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+nav .navlinks ul li a{
+    color: var(--nav-textcolor);
+}
+nav .search input{
+    padding: 0.5rem 2rem;
+    background: var(--input-background);
+    border: 1px solid var(--body-textcolor-black);
+}   
+nav .search{
+    position: relative;
+}
+nav .search i{
+    color: var(--nav-textcolor);
+    margin: 0.5rem  0 0 0.5rem;
+    position: absolute;
+}
+nav .user{
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    padding: 2rem 5rem 0 0;
+}
+nav .user i{
+    font-size: 2rem;
+    color: var(--nav-textcolor);
+}
